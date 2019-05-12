@@ -75,6 +75,12 @@ public class PlayPokeTest {
 //		numlist.add(6);
 //        Assert.assertEquals(9,inst.rank(suits,numlist).intValue());
 //	}
-
+	@Test
+	public void get_playPoke_test() {
+		PlayPoke inst = new PlayPoke();
+		String blk = "Black: 2H 3D 5S 9C KD";
+		String wht = "White: 2C 3H 4S 8C AH";
+	    Assert.assertEquals("White wins",inst.playPoke(blk,wht));
+}
 	
 }
